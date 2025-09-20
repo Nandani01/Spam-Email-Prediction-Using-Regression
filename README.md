@@ -13,7 +13,6 @@ Key Steps:
 
 3. Feature Extraction:
    The text data (email messages) is transformed into numerical feature vectors using TfidfVectorizer. This technique converts text into a matrix of TF-IDF features, representing the importance of words in each      email.
-
    The target variables (Y_train and Y_test) are converted to integers.
 
 4. Training the Machine Learning Model:
@@ -25,9 +24,9 @@ Key Steps:
 6. Building a Predictive System: A function is created to take a new email message as input, transform it into a feature vector using the trained TfidfVectorizer, and then use the trained Logistic Regression  model to predict whether the email is spam or ham.
 
 7. Technologies Used:
+   -Python
+   -pandas
+   -numpy
+   -scikit-learn
 
-Python
-pandas
-numpy
-scikit-learn
-This project demonstrates a basic workflow for building a text classification model, specifically for spam detection.
+   This project demonstrates a basic workflow for building a text classification model, specifically for spam detection.
