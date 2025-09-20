@@ -6,27 +6,25 @@ Key Steps:
 
 2. Data Collection and Preprocessing:
 
--The mail_data.csv dataset is loaded into a pandas DataFrame.
-
--Null values in the dataset are replaced with empty strings to ensure data consistency.
-
--The 'Category' column is label encoded, where 'spam' is represented by 0 and 'ham' by 1. This converts the categorical labels into numerical values suitable for machine learning.
-
--Splitting Data: The dataset is split into training and testing sets (80% for training, 20% for testing) to evaluate the model's performance on unseen data.
+   -The mail_data.csv dataset is loaded into a pandas DataFrame.
+   -Null values in the dataset are replaced with empty strings to ensure data consistency.
+   -The 'Category' column is label encoded, where 'spam' is represented by 0 and 'ham' by 1. This converts the categorical labels into numerical values suitable for machine learning.
+   -Splitting Data: The dataset is split into training and testing sets (80% for training, 20% for testing) to evaluate the model's performance on unseen data.
 
 3. Feature Extraction:
-The text data (email messages) is transformed into numerical feature vectors using TfidfVectorizer. This technique converts text into a matrix of TF-IDF features, representing the importance of words in each email.
+   The text data (email messages) is transformed into numerical feature vectors using TfidfVectorizer. This technique converts text into a matrix of TF-IDF features, representing the importance of words in each      email.
 
-The target variables (Y_train and Y_test) are converted to integers.
+   The target variables (Y_train and Y_test) are converted to integers.
 
-4. Training the Machine Learning Model: A Logistic Regression model is trained on the training data (the TF-IDF features and their corresponding labels).
+4. Training the Machine Learning Model:
+  A Logistic Regression model is trained on the training data (the TF-IDF features and their corresponding labels).
 
 5. Evaluating the Trained Model:
-The model's accuracy is evaluated on both the training and testing datasets using the accuracy_score metric. This provides insights into how well the model performs on data it has seen and data it hasn't seen.
+   The model's accuracy is evaluated on both the training and testing datasets using the accuracy_score metric. This provides insights into how well the model performs on data it has seen and data it hasn't seen.
 
-6. Building a Predictive System: A function is created to take a new email message as input, transform it into a feature vector using the trained TfidfVectorizer, and then use the trained Logistic Regression model to predict whether the email is spam or ham.
+6. Building a Predictive System: A function is created to take a new email message as input, transform it into a feature vector using the trained TfidfVectorizer, and then use the trained Logistic Regression  model to predict whether the email is spam or ham.
 
-Technologies Used:
+7. Technologies Used:
 
 Python
 pandas
